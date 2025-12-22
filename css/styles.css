@@ -90,7 +90,7 @@ nav .nav .profile .frame-profile img {
 .button {
   padding: 10px 20px;
   background-color: white;
-    border: 1px solid transparent;
+  border: 1px solid transparent;
   border-radius: 15px;
   color: black;
   font-size: 20px;
@@ -145,10 +145,10 @@ nav .nav .profile .frame-profile img {
   border: 2px solid white;
   margin-right: 20px;
 }
-.container .about-me .contact .youtube{
+.container .about-me .contact .youtube {
   color: red;
 }
-.container .about-me .contact .facebook{
+.container .about-me .contact .facebook {
   color: blue;
 }
 .container .about-me .contact a {
