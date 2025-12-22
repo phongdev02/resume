@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Resume of Phong</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav">
+        <div class="nav-left">
+          <div class="icon">
+            <i class="fa-solid fa-list"></i>
+          </div>
+          <div class="nav-list">
+            <ul>
+              <li><p>About Me</p></li>
+              <li><p>Education</p></li>
+              <li><p>Skills</p></li>
+              <li><p>Experience</p></li>
+              <li><p>Projects</p></li>
+              <li><p>Contact</p></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="profile">
+          <div class="frame-profile">
+            <img src="images/profile.jpg" alt="anh daidien" />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="about-me active">
+        <div class="flex">
+          <div class="me-images">
+            <div class="frame-profile">
+              <img src="images/profile.jpg" alt="anh daidien" />
+            </div>
+          </div>
+          <header>
+            <div class="info">
+              <h1>Ngô Văn Phong</h1>
+              <p>App Developer</p>
+            </div>
+            <div class="info-detail">
+              <ul>
+                <li class="date flex">
+                  <i class="fa-solid fa-cake-candles"></i>
+                  <p>0376380174</p>
+                </li>
+                <li class="number-phone flex">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>0376380174</p>
+                </li>
+                <li class="location flex">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>Phường 16, Gò Vấp , Hồ Chí Minh</p>
+                </li>
+                <li class="email flex">
+                  <i class="fa-solid fa-at"></i>
+                  <p>ngovanphong2k2@gmail.com</p>
+                </li>
+              </ul>
+            </div>
+            <div class="contact">
+              <a href="CV/CV_flutter-dart_Ngô_Văn_Phong.pdf"><button>Download CV</button></a>
+            </div>
+          </header>
+        </div>
+      </div>
+      <div class="education">
+        <header>
+          <h4>Education</h4>
+        </header>
+      </div>
+      <div class="skills">
+        <header>
+          <h4>Skills</h4>
+        </header>
+      </div>
+      <div class="experience">
+        <header>
+          <h4>Experience</h4>
+        </header>
+      </div>
+      <div class="projects">
+        <header>
+          <h4>Projects</h4>
+        </header>
+      </div>
+      <div class="contact">
+        <header>
+          <h4>Contact</h4>
+        </header>
+      </div>
+    </div>
+  </body>
+  <script src="javascript/script.js"></script>
+  <script>
+    const icon = document.querySelector(".icon");
+    const navLeft = document.querySelector(".nav-left");
+    icon.addEventListener("mouseover", () => {
+      //icon.querySelector("i").style.color = "red";
+    });
+  </script>
+</html>

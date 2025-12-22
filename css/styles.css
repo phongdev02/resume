@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #9bede7;
+  width: 60%;
+  margin: auto;
+  color: white;
+}
+.flex{
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+ul{
+  list-style-type: none;
+}
+nav .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav .nav-left .nav-list {
+  position: relative;
+}
+.nav .nav-left .nav-list ul{
+  position: absolute;
+  list-style: none;
+  left: -10px;
+  visibility: hidden;
+  opacity: 0;
+  height: 0px;
+  font-weight: bold;
+  transition: 0.5s;
+  background-color: #9bede7;
+
+  color: white
+}
+.nav .nav-left .nav-list ul li{
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+.nav .nav-left:hover .nav-list ul {
+  visibility: initial;
+  opacity: 1;
+  height: auto;
+}
+.nav .nav-left .nav-list ul p:hover{
+  cursor: pointer;
+}
+nav .nav-left .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .nav-left .icon i {
+  font-size: 30px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  transition: 0.5s;
+}
+.icon:hover i {
+  transform: rotate(360deg);
+}
+.icon:hover i::before {
+  content: "\f142"; /* fa-xmark */
+}
+nav .nav .profile .frame-profile {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .nav .profile .frame-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+/* container  */
+.active{
+  display: block !important;
+}
+.container{
+  height: fit-content;
+  margin-bottom: 20px;
+  padding:20px;
+  border-radius: 10px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+.container .about-me header >div{
+  padding: 15px;
+  margin-top: 10px;
+}
+.container .about-me header .info h1{
+  font-size: 60px;
+}
+.container .about-me header .info p{
+  font-size: 30px;
+}
+.container .about-me header .info-detail ul li{
+  margin-top: 15px;
+  font-size: 20px;
+}
+.container .about-me header .info-detail ul li i{
+  margin-right: 10px;
+}
+.container > div{
+  display: none;
+  padding: 0px 20px;
+  border-radius: 10px;
+}
+.container .about-me .me-images img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: 20px;
+}
