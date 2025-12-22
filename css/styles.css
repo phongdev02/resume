@@ -10,12 +10,12 @@ body {
   margin: auto;
   color: white;
 }
-.flex{
+.flex {
   display: flex;
   /* justify-content: space-around; */
   align-items: center;
 }
-ul{
+ul {
   list-style-type: none;
 }
 nav .nav {
@@ -28,7 +28,7 @@ nav .nav {
 .nav .nav-left .nav-list {
   position: relative;
 }
-.nav .nav-left .nav-list ul{
+.nav .nav-left .nav-list ul {
   position: absolute;
   list-style: none;
   left: -10px;
@@ -39,9 +39,9 @@ nav .nav {
   transition: 0.5s;
   background-color: #9bede7;
 
-  color: white
+  color: white;
 }
-.nav .nav-left .nav-list ul li{
+.nav .nav-left .nav-list ul li {
   padding: 10px 20px;
   margin-top: 10px;
 }
@@ -50,7 +50,7 @@ nav .nav {
   opacity: 1;
   height: auto;
 }
-.nav .nav-left .nav-list ul p:hover{
+.nav .nav-left .nav-list ul p:hover {
   cursor: pointer;
 }
 nav .nav-left .icon {
@@ -87,42 +87,83 @@ nav .nav .profile .frame-profile img {
   border-radius: 50%;
 }
 /* container  */
-.active{
+.button {
+  padding: 10px 20px;
+  background-color: white;
+    border: 1px solid transparent;
+  border-radius: 15px;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 15px;
+}
+.button:hover {
+  border: 1px solid black;
+  color: white; /* chữ rỗng */
+  -webkit-text-stroke: 1px black;
+  transition: 0.25s;
+  background-color: white;
+}
+.active {
   display: block !important;
 }
-.container{
-  height: fit-content;
+.container {
   margin-bottom: 20px;
-  padding:20px;
+  padding: 20px;
   border-radius: 10px;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
-.container .about-me header >div{
+.container .about-me header > div {
   padding: 15px;
   margin-top: 10px;
 }
-.container .about-me header .info h1{
+.container .about-me header .info h1 {
   font-size: 60px;
 }
-.container .about-me header .info p{
+.container .about-me header .info p {
   font-size: 30px;
 }
-.container .about-me header .info-detail ul li{
+.container .about-me header .info-detail ul li {
   margin-top: 15px;
   font-size: 20px;
 }
-.container .about-me header .info-detail ul li i{
+.container .about-me header .info-detail ul li i {
   margin-right: 10px;
 }
-.container > div{
+.container > div {
   display: none;
   padding: 0px 20px;
   border-radius: 10px;
 }
-.container .about-me .me-images img{
+.container .about-me .me-images img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
   border: 2px solid white;
   margin-right: 20px;
+}
+.container .about-me .contact .youtube{
+  color: red;
+}
+.container .about-me .contact .facebook{
+  color: blue;
+}
+.container .about-me .contact a {
+  text-decoration: none;
+}
+.container .about-me .contact .zalo {
+  position: relative;
+  margin-left: 5px;
+  padding: 10px 30px;
+}
+.container .about-me .contact .zalo img {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
