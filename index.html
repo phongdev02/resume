@@ -22,12 +22,14 @@
           </div>
           <div class="nav-list">
             <ul>
-              <li><p>About Me</p></li>
-              <li><p>Education</p></li>
-              <li><p>Skills</p></li>
-              <li><p>Experience</p></li>
-              <li><p>Projects</p></li>
-              <li><p>Contact</p></li>
+              <li style="--i:1"><p>About Me</p></li>
+              <li style="--i:2"><p>Education</p></li>
+              <li style="--i:3"><p>Skills</p></li>
+              <li style="--i:4"><p>Experience</p></li>
+              <li style="--i:5"><p>Projects</p></li>
+              <li style="--i:6">
+                <p>Contact</p>
+              </li>
             </ul>
           </div>
         </div>
@@ -47,7 +49,7 @@
               <img src="images/profile.jpg" alt="anh daidien" />
             </div>
           </div>
-          <header>
+          <header data-aos="fade-left" data-aos-offset="50">
             <div class="info">
               <h1>Ngô Văn Phong</h1>
               <p>App Developer</p>
@@ -72,32 +74,31 @@
                 </li>
               </ul>
             </div>
-            <div class="contact">
+            <div class="contact flex">
               <a class="CV button" href="CV/CV_flutter-dart_Ngô_Văn_Phong.pdf"
                 >Go to CV</a
               >
               <a class="github button" href="https://github.com/phongdev02"
-                ><i class="fa-brands fa-github"></i></a
-              >
-              <a class="youtube button" href="https://www.youtube.com/@phongngo2224"
-                ><i class="fa-brands fa-youtube"></i></a
-              >
-              <a class="facebook button" href="https://www.facebook.com/phongngo02/"
-                ><i class="fa-brands fa-facebook"></i></a
-              >
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                class="youtube button"
+                href="https://www.youtube.com/@phongngo2224"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a
+                class="facebook button"
+                href="https://www.facebook.com/phongngo02/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
               <a class="zalo button" href="https://zalo.me/0376380174"
-                ><img src="images/zalo.png" alt=""></a
-              >
-
+                ><img src="images/zalo.png" alt=""
+              /></a>
             </div>
           </header>
         </div>
       </div>
-      <div class="education">
-        <header>
-          <h4>Education</h4>
-        </header>
-      </div>
+      <div class="education active">div</div>
       <div class="skills">
         <header>
           <h4>Skills</h4>
@@ -113,19 +114,25 @@
           <h4>Projects</h4>
         </header>
       </div>
-      <div class="contact">
+      <div class="contact" id="contact">
         <header>
           <h4>Contact</h4>
         </header>
       </div>
     </div>
+    <div class="loading">
+      <div class="loader">
+        <i class="fa-solid fa-spinner"></i>
+      </div>
+    </div>
+    <div class="button-change-page">
+      <div class=" button-left">
+        <i class="fa-solid fa-angle-left"></i>
+      </div>
+      <div class=" button-right">
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+    </div>
   </body>
   <script src="javascript/script.js"></script>
-  <script>
-    const icon = document.querySelector(".icon");
-    const navLeft = document.querySelector(".nav-left");
-    icon.addEventListener("mouseover", () => {
-      //icon.querySelector("i").style.color = "red";
-    });
-  </script>
 </html>
